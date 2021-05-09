@@ -9,7 +9,6 @@ REQUIREMENTS_FILE = Path('.') / 'requirements.txt'
 def _read_requirements(file: Path) -> List[str]:
     with open(file) as req_file:
         lines = req_file.readlines()
-    print(lines)
     return [line.rstrip() for line in lines]
 
 
